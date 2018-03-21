@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+	<title>Flaskr</title>
+</head>
+<body>
+{% include "header.html" %}
+    <div class="container mx-auto text-center">
+        <p class="lead">Lorem Ipsum Dolor Sit Amet.</p>
+        {% block body %}{% endblock %}
+    </div>
+{% include "footer.html" %}
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+</body>
+</html>

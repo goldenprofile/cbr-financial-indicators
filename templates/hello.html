@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block body %}
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Валюта</th>
+                <th scope="col">Курс</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>US Dollar</td>
+          <td>{{ usd }}</td>
+        </tr>
+        <tr>
+          <td>Euro</td>
+          <td>{{ eur }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="clearfix"></div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Металл</th>
+                <th scope="col">Курс</th>
+            </tr>
+        </thead>
+      <tbody>
+        <tr>
+          <td>Aurum</td>
+          <td>{{ au }}</td>
+        </tr>
+        <tr>
+          <td>Argentum</td>
+          <td>{{ ag }}</td>
+        </tr>
+        <tr>
+          <td>Platinum</td>
+          <td>{{ pt }}</td>
+        </tr>
+        <tr>
+          <td>Palladium</td>
+          <td>{{ pd }}</td>
+        </tr>
+      </tbody>
+    </table>
+{% endblock %}
